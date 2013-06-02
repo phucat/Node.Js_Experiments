@@ -1,0 +1,65 @@
+<html>
+<head>
+<script src="/socket.io/socket.io.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+var socket = io.connect('http://localhost');
+
+
+socket.on('move it', function (data) {
+	if(data.ascii != 'favicon.ico')	{
+		//$('body').append('<div>' + data.ascii+ '</div>');
+		console.log(data.ascii);
+		move(data.ascii);
+	}
+});
+
+var flag = false;
+var ASC = 0;
+function move(ascii)	{
+	var actor = $('#actor');
+	var left = parseInt(actor.css('left').split('px')[0]);
+	var top = parseInt(actor.css('top').split('px')[0]);
+	switch(ascii)	{
+		case 87:// up			
+			actor.css('top', top - 5);
+			break;				
+		case 68: //right
+			actor.css('left', left + 5);
+			break;		
+		case 83: //down
+			
+			actor.css('top', top + 5);		
+			break;		
+		case 65: //left
+			actor.css('left', left - 5);		
+			break;
+	}  	
+	
+	ASC = ascii;
+	if(!flag)	{
+		flag = true;
+		var interval = setInterval(function()	{
+				move(ASC);
+			}, 100);	
+	}
+}
+  
+</script>
+<style>
+#actor {
+	position:absolute;
+	width:40px;
+	height:40px;
+	background:red;
+	border:#333 solid 5px;
+	top: 10px;
+	left:10px;
+}
+</style>
+</head>
+<body>
+
+<div id="actor"></div>
+</body>
+</html>

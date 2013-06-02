@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'node-mime' ]
+2 info using npm@1.2.2
+3 info using node@v0.8.18
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json C:\Users\Ray\Desktop\NODE.JS\server\package.json
+6 verbose read json C:\Users\Ray\Desktop\NODE.JS\server\node_modules\express\package.json
+7 verbose read json C:\Users\Ray\Desktop\NODE.JS\server\node_modules\node-sqlserver\package.json
+8 verbose read json C:\Users\Ray\Desktop\NODE.JS\server\node_modules\restify\package.json
+9 verbose read json C:\Users\Ray\Desktop\NODE.JS\server\node_modules\socket.io\package.json
+10 verbose read json C:\Users\Ray\Desktop\NODE.JS\server\package.json
+11 verbose cache add [ 'node-mime', null ]
+12 verbose cache add name=undefined spec="node-mime" args=["node-mime",null]
+13 verbose parsed url { pathname: 'node-mime', path: 'node-mime', href: 'node-mime' }
+14 silly lockFile ea6d60a6-node-mime node-mime
+15 verbose lock node-mime C:\Users\Ray\AppData\Roaming\npm-cache\ea6d60a6-node-mime.lock
+16 silly lockFile ea6d60a6-node-mime node-mime
+17 verbose addNamed [ 'node-mime', '' ]
+18 verbose addNamed [ null, '' ]
+19 silly lockFile a0f6c6e3-node-mime node-mime@
+20 verbose lock node-mime@ C:\Users\Ray\AppData\Roaming\npm-cache\a0f6c6e3-node-mime.lock
+21 silly addNameRange { name: 'node-mime', range: '', hasData: false }
+22 verbose url raw node-mime
+23 verbose url resolving [ 'https://registry.npmjs.org/', './node-mime' ]
+24 verbose url resolved https://registry.npmjs.org/node-mime
+25 info trying registry request attempt 1 at 15:32:29
+26 http GET https://registry.npmjs.org/node-mime
+27 http 404 https://registry.npmjs.org/node-mime
+28 silly registry.get cb [ 404,
+28 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+28 silly registry.get     date: 'Thu, 30 May 2013 07:32:47 GMT',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'content-length': '52',
+28 silly registry.get     'cache-control': 'must-revalidate' } ]
+29 silly lockFile a0f6c6e3-node-mime node-mime@
+30 error 404 'node-mime' is not in the npm registry.
+30 error 404 You should bug the author to publish it
+30 error 404
+30 error 404 Maybe try 'npm search mime'
+30 error 404
+30 error 404 Note that you can also install from a
+30 error 404 tarball, folder, or http url, or git url.
+31 error System Windows_NT 6.1.7601
+32 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "node-mime"
+33 error cwd C:\Users\Ray\Desktop\NODE.JS\server
+34 error node -v v0.8.18
+35 error npm -v 1.2.2
+36 error code E404
+37 verbose exit [ 1, true ]
